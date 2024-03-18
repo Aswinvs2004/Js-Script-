@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hamburger Builder</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Hamburger Builder</h1>
+    <form>
+        <div class="form-group">
+            <label for="bun">Choose a bun:</label>
+            <select id="bun">
+                <option value="sesame">Sesame Bun</option>
+                <option value="whole-grain">Whole Grain Bun</option>
+                <option value="brioche">Brioche Bun</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="patty">Choose a patty:</label>
+            <select id="patty">
+                <option value="beef">Beef Patty</option>
+                <option value="chicken">Chicken Patty</option>
+                <option value="vegetarian">Vegetarian Patty</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="cheese">Choose cheese:</label>
+            <select id="cheese">
+                <option value="cheddar">Cheddar Cheese</option>
+                <option value="swiss">Swiss Cheese</option>
+                <option value="american">American Cheese</option>
+            </select>
+        </div>
+        <button type="button" onclick="buildHamburger()">Build Hamburger</button>
+    </form>
+    <div id="hamburgerOutput"></div>
+</div>
+
+<script src="js.js"></script>
+</body>
+</html>
